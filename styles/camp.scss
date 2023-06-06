@@ -1,7 +1,42 @@
 *{
     background: #171120;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer{
     background: #221930;
+    padding: 2em 2em;
+    position: absolute;
+    bottom: 0.5px; 
+}
+
+.navigate{
+    padding: 1em;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+        .logo-container{
+            
+            .in-cont{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.mainlogo{
+    opacity: 0.3;
+    z-index: 0.2;
+    position: absolute;
+    top: 4em;
+}
+
+.nav-bubble{
+    display: none;
 }
