@@ -46,5 +46,24 @@
 }
 
 .Body-section {
-  margin-top: 2.2 em;
+  margin-top: 2.4em;
+  text-align: center;
+}
+.Body-section .container {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Body-section .container .left {
+  display: inline-block;
+}
+.Body-section .container .left h1 {
+  font-size: 2.69em;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+.Body-section .container .left h1 .you {
+  font-size: 1.2em;
+  background-image: radial-gradient(119.33% 119.33% at 0% 8%, #ff83cd 0%, rgba(255, 131, 205, 0.489983) 41.63%, rgba(182, 166, 223, 0.622549) 67.53%, rgba(139, 186, 233, 0.7) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=camp.css.map */
