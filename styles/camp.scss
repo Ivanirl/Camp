@@ -45,16 +45,22 @@ button {
 body {
   background: #171120;
   margin: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .navigate {
   padding: 1.5em 1.9em;
+  
+  box-sizing: border-box;
 
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 20000;
+    
+  box-sizing: border-box;
 
     .logo-container {
       .in-cont {
@@ -129,16 +135,20 @@ body {
   margin-top: 3em;
   text-align: center;
   background: none;
+  
 
   .container {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: none;
     overflow: hidden;
 
+  box-sizing: border-box;
     .left {
       display: inline-block;
       padding: 0 2.8em;
       background: none;
+      
+  box-sizing: border-box;
 
       h1 {
         font-size: 2.5em;
@@ -170,6 +180,8 @@ body {
       }
 
       .booton {
+        
+  box-sizing: border-box;
         font-weight: 600;
         border: none;
         background-color: blue;
@@ -199,11 +211,14 @@ body {
       top: 43%;
       right: -6.5px;
       overflow: hidden;
+      
+  box-sizing: border-box;
 
       .mainlogo {
         background: transparent;
         width: 590px;
         opacity: 0.3;
+
       }
     }
   }
