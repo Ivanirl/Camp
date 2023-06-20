@@ -16,6 +16,3 @@ function CloseMobileNav() {
 MenuOpen.addEventListener("click", OpenMobileNav);
 MenuClose.addEventListener("click", CloseMobileNav);
 //open and close navigation on mobile view
-
-//she need time o
-//i need time o
