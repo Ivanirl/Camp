@@ -1,0 +1,129 @@
+@font-face {
+	font-family: Centra;
+	src: url('../resources/font/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Centra;
+	src: url('../resources/font/CentraNo2-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Centra;
+	src: url('../resources/font/CentraNo2-Book.ttf');
+	font-weight: 400;
+}
+
+* {
+  font-family: 'Centra', sans-serif !important;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #181818;
+}
+
+.mainBody{
+    display: flex;
+}
+
+section{
+    padding: 2.5em 2em;
+    font-size: 1.1em;
+}
+
+.navigation{
+    border-right: solid 2px #9e9e9e;
+    padding-left: 0;
+    padding-right: 0;
+
+    .container{
+        text-align: left;
+
+        .topNav, .logo{
+            text-align: center;
+            padding: 0.5em 5.5em;
+        }
+
+        .topNav{
+            margin: 2em 0;
+            margin-top: 1.5;
+
+
+            .profilepic{
+                margin-bottom: 1em;
+                padding: 3px;
+                background-color: rgb(120, 211, 223);
+                border-radius: 50%;
+                .ivanface{
+                    width: 8em ;
+                    border-radius: 50%;
+                }
+            }
+            .profileDetails{
+                span{
+                    display: block;
+                }
+
+                .Name{
+                    font-weight: 700;
+                    font-size: 1.2em;
+                }
+
+                .Role{
+                    color: #9e9e9e;
+                    font-size: 0.9em;
+                }
+            }
+        }
+
+        .middleNav{
+            font-weight: 500;
+            margin-top: 3em;
+            padding-left: 2.6em;
+            margin-bottom: 4em;
+            ul{
+                li{
+                    margin: 0.8em 0;
+                   // padding-right: 0 3em;
+                }
+            }
+        }
+
+        .bottomNav{
+            font-weight: 500;
+            padding-left: 2.6em;
+
+            ul{
+                li{
+                    margin: 0.8em 0;
+
+                }
+            }
+        }
+    }
+}
+
+.dashboard{
+
+    .container{
+        padding: 0 1em;
+
+        .titleBlock{}
+
+        .statBlock{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .extraDataBlock{
+            display: flex;
+        }
+
+        .socialStatsBlock{
+            display: flex;
+        }
+    }
+}
