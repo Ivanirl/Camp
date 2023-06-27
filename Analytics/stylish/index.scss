@@ -1,21 +1,21 @@
 @font-face {
-	font-family: Centra;
-	src: url('../resources/font/CentraNo2-Bold.ttf');
-	font-weight: 700;
+  font-family: Centra;
+  src: url("../resources/font/CentraNo2-Bold.ttf");
+  font-weight: 700;
 }
 @font-face {
-	font-family: Centra;
-	src: url('../resources/font/CentraNo2-Medium.ttf');
-	font-weight: 500;
+  font-family: Centra;
+  src: url("../resources/font/CentraNo2-Medium.ttf");
+  font-weight: 500;
 }
 @font-face {
-	font-family: Centra;
-	src: url('../resources/font/CentraNo2-Book.ttf');
-	font-weight: 400;
+  font-family: Centra;
+  src: url("../resources/font/CentraNo2-Book.ttf");
+  font-weight: 400;
 }
 
 * {
-  font-family: 'Centra', sans-serif !important;
+  font-family: "Centra", sans-serif !important;
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -25,105 +25,190 @@
   color: #181818;
 }
 
-.mainBody{
-    display: flex;
+body {
+  height: 100%;
+  //max-width: fill;
 }
 
-section{
-    padding: 2.5em 2em;
-    font-size: 1.1em;
+.mainBody {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  //justify-content: space-between;
 }
 
-.navigation{
-    border-right: solid 2px #9e9e9e;
-    padding-left: 0;
-    padding-right: 0;
+section {
+  padding: 2.5em 2em;
+  font-size: 1.1em;
+}
 
-    .container{
-        text-align: left;
+.navigation {
+  height: 100%;
+  border-right: solid 2px #9e9e9e;
+  padding-left: 0;
+  padding-right: 0;
 
-        .topNav, .logo{
-            text-align: center;
-            padding: 0.5em 5.5em;
+  .container {
+    text-align: left;
+
+    .topNav,
+    .logo {
+      text-align: center;
+      padding: 0.5em 5.5em;
+    }
+
+    .topNav {
+      margin: 2em 0;
+      margin-top: 1.5;
+
+      .profilepic {
+        margin-bottom: 1em;
+        padding: 3px;
+        background-color: rgb(120, 211, 223);
+        border-radius: 50%;
+        .ivanface {
+          width: 7em;
+          border-radius: 50%;
+        }
+      }
+      .profileDetails {
+        span {
+          display: block;
         }
 
-        .topNav{
-            margin: 2em 0;
-            margin-top: 1.5;
+        .Name {
+          font-weight: 700;
+          font-size: 1.2em;
+        }
 
+        .Role {
+          color: #9e9e9e;
+          font-size: 0.9em;
+        }
+      }
+    }
 
-            .profilepic{
-                margin-bottom: 1em;
-                padding: 3px;
-                background-color: rgb(120, 211, 223);
-                border-radius: 50%;
-                .ivanface{
-                    width: 8em ;
-                    border-radius: 50%;
+    .middleNav {
+      font-weight: 500;
+      margin-top: 3em;
+      padding-left: 2.6em;
+      margin-bottom: 4em;
+      ul {
+        li {
+          margin: 0.8em 0;
+          // padding-right: 0 3em;
+        }
+      }
+    }
+
+    .bottomNav {
+      font-weight: 500;
+      padding-left: 2.6em;
+
+      ul {
+        li {
+          margin: 0.8em 0;
+        }
+      }
+    }
+  }
+}
+
+.contain {
+}
+
+.dashboard {
+  .container {
+    padding: 0 1em;
+
+    .titleBlock {
+      font-size: 1.4em;
+    }
+
+    .contain {
+      padding-left: 4px;
+
+      section {
+        padding: 0;
+      }
+
+      .statBlock {
+        margin-top: 3em;
+        display: flex;
+        gap: 5em;
+        justify-content: space-between;
+
+        .block {
+          .hm {
+            //border-top: solid 2px;
+            //padding-right: 0.7em;
+          }
+
+          .ho {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: solid 2px;
+            //padding-right: 0.7em;
+            gap: 10px;
+          }
+        }
+      }
+
+      .extraDataBlock {
+        display: flex;
+        margin-top: 3em;
+        justify-content: space-between;
+
+        .retention{
+            width: fit-content;
+            .head{
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                gap: 2em;
+
+                span{
+                    margin-top: 3px;
+                    font-size: 0.9em;
+                    color: #9e9e9e;
+                    align-self: center;
+                }
+
+                .timeperiod{
+                    align-self: center;
+                    padding: 1px 4px;
+                    border-radius: 20%;
+                    font-size: 0.9em;
+                    color: #9e9e9e;
+                    border: solid 2px #9e9e9e;
                 }
             }
-            .profileDetails{
+
+            .megan{
+                margin-top: 10px;
+                padding: 1em 2em;
+                display: flex;
+                //width: 100%;
+                background-color: aqua;
+                border-radius: 20px;
+                gap: 0;
+                //box-shadow: ;
+
+                .left{
+                    opacity: 0.7;
+                }
+
                 span{
-                    display: block;
-                }
-
-                .Name{
-                    font-weight: 700;
-                    font-size: 1.2em;
-                }
-
-                .Role{
-                    color: #9e9e9e;
                     font-size: 0.9em;
                 }
             }
         }
+      }
 
-        .middleNav{
-            font-weight: 500;
-            margin-top: 3em;
-            padding-left: 2.6em;
-            margin-bottom: 4em;
-            ul{
-                li{
-                    margin: 0.8em 0;
-                   // padding-right: 0 3em;
-                }
-            }
-        }
-
-        .bottomNav{
-            font-weight: 500;
-            padding-left: 2.6em;
-
-            ul{
-                li{
-                    margin: 0.8em 0;
-
-                }
-            }
-        }
+      .socialStatsBlock {
+        display: flex;
+      }
     }
-}
-
-.dashboard{
-
-    .container{
-        padding: 0 1em;
-
-        .titleBlock{}
-
-        .statBlock{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .extraDataBlock{
-            display: flex;
-        }
-
-        .socialStatsBlock{
-            display: flex;
-        }
-    }
+  }
 }
