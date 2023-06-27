@@ -24,8 +24,14 @@
   color: #181818;
 }
 
+body {
+  height: 100%;
+}
+
 .mainBody {
   display: flex;
+  height: 100%;
+  width: 100%;
 }
 
 section {
@@ -34,6 +40,7 @@ section {
 }
 
 .navigation {
+  height: 100%;
   border-right: solid 2px #9e9e9e;
   padding-left: 0;
   padding-right: 0;
@@ -41,7 +48,8 @@ section {
 .navigation .container {
   text-align: left;
 }
-.navigation .container .topNav, .navigation .container .logo {
+.navigation .container .topNav,
+.navigation .container .logo {
   text-align: center;
   padding: 0.5em 5.5em;
 }
@@ -56,7 +64,7 @@ section {
   border-radius: 50%;
 }
 .navigation .container .topNav .profilepic .ivanface {
-  width: 8em;
+  width: 7em;
   border-radius: 50%;
 }
 .navigation .container .topNav .profileDetails span {
@@ -90,13 +98,70 @@ section {
 .dashboard .container {
   padding: 0 1em;
 }
-.dashboard .container .statBlock {
+.dashboard .container .titleBlock {
+  font-size: 1.4em;
+}
+.dashboard .container .contain {
+  padding-left: 4px;
+}
+.dashboard .container .contain section {
+  padding: 0;
+}
+.dashboard .container .contain .statBlock {
+  margin-top: 3em;
   display: flex;
+  gap: 5em;
   justify-content: space-between;
 }
-.dashboard .container .extraDataBlock {
+.dashboard .container .contain .statBlock .block .ho {
   display: flex;
+  justify-content: space-between;
+  border-bottom: solid 2px;
+  gap: 10px;
 }
-.dashboard .container .socialStatsBlock {
+.dashboard .container .contain .extraDataBlock {
+  display: flex;
+  margin-top: 3em;
+  justify-content: space-between;
+}
+.dashboard .container .contain .extraDataBlock .retention {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.dashboard .container .contain .extraDataBlock .retention .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2em;
+}
+.dashboard .container .contain .extraDataBlock .retention .head span {
+  margin-top: 3px;
+  font-size: 0.9em;
+  color: #9e9e9e;
+  align-self: center;
+}
+.dashboard .container .contain .extraDataBlock .retention .head .timeperiod {
+  align-self: center;
+  padding: 1px 4px;
+  border-radius: 20%;
+  font-size: 0.9em;
+  color: #9e9e9e;
+  border: solid 2px #9e9e9e;
+}
+.dashboard .container .contain .extraDataBlock .retention .megan {
+  margin-top: 10px;
+  padding: 1em 2em;
+  display: flex;
+  background-color: aqua;
+  border-radius: 20px;
+  gap: 0;
+}
+.dashboard .container .contain .extraDataBlock .retention .megan .left {
+  opacity: 0.7;
+}
+.dashboard .container .contain .extraDataBlock .retention .megan span {
+  font-size: 0.9em;
+}
+.dashboard .container .contain .socialStatsBlock {
   display: flex;
 }/*# sourceMappingURL=index.css.map */
