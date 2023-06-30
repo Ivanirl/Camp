@@ -264,10 +264,18 @@ section {
                     border-radius: 18px;
                     text-align: center;
                     padding: 1em 1em;
+                    h4{
+                      font-size: 0.8em;
+                    }
 
                     span{
-                        font-size: 0.8em;
+                      margin: 5px 0;
+                        font-size: 0.6em;
                         display: block;
+                    }
+
+                    .tiny{
+                      font-size: 0.4em;
                     }
                 }
             }
