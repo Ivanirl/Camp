@@ -32,7 +32,7 @@ body {
   margin-bottom: 4em;
   background: rgba($color: #42ecde, $alpha: 0.08);
 }
-.ivanhead{
+.ivanhead {
   width: 30px;
   border-radius: 50%;
 }
@@ -46,7 +46,7 @@ body {
 
 section {
   padding: 1.7em 2em;
-  font-size: 1.1em; 
+  font-size: 1.1em;
 }
 
 .navigation {
@@ -55,7 +55,6 @@ section {
   padding-left: 0;
   padding-right: 0;
   z-index: 1001;
-  
 
   .container {
     text-align: left;
@@ -98,7 +97,7 @@ section {
     }
 
     .middleNav {
-        font-size: 1em;
+      font-size: 1em;
       font-weight: 500;
       margin-top: 2em;
       padding-left: 2.2em;
@@ -109,7 +108,7 @@ section {
           margin: 1em 0;
           // padding-right: 0 3em;
 
-          span{
+          span {
             display: flex;
             align-items: center;
             gap: 9px;
@@ -128,7 +127,7 @@ section {
           align-items: center;
           margin: 1em 0;
 
-          span{
+          span {
             display: flex;
             align-items: center;
             gap: 9px;
@@ -141,14 +140,13 @@ section {
 
 .dashboard {
   padding-bottom: 42em;
-    h2{
-        font-size: 1.5em;
-    }
+  h2 {
+    font-size: 1.5em;
+  }
 
-    span{
-        font-size: 1em;
-    }
-
+  span {
+    font-size: 1em;
+  }
 
   .container {
     padding: 0 1em;
@@ -171,10 +169,10 @@ section {
 
         .block {
           width: 7.5em;
-            .hm{
-                font-size: 1.3em;
-                height: fit-content;
-            }
+          .hm {
+            font-size: 1.3em;
+            height: fit-content;
+          }
 
           .ho {
             display: flex;
@@ -233,13 +231,13 @@ section {
               opacity: 0.7;
             }
 
-            .right{
+            .right {
               margin: 10px 0;
               margin-left: 6em;
               margin-right: 4em;
               width: fit-content;
 
-              img{
+              img {
                 height: 7.5em;
                 border-radius: 2em;
               }
@@ -251,35 +249,35 @@ section {
           }
         }
 
-        .Competitors{
-            .competi{
-                display: flex;
-                flex-direction: column;
-                margin: 10px 0;
-                gap: 13px;
+        .Competitors {
+          .competi {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+            gap: 13px;
 
-                li{
-                    font-size: 0.8em;
-                    display: flex;
-                    gap: 1.9em;
-                    align-items: center;
-                    flex-wrap: nowrap;
+            li {
+              font-size: 0.8em;
+              display: flex;
+              gap: 1.9em;
+              align-items: center;
+              flex-wrap: nowrap;
 
-                    .picpic{
-                      border-radius: 50%;
-                      width: 50px;
-                    }
-                }
+              .picpic {
+                border-radius: 50%;
+                width: 50px;
+              }
             }
+          }
 
-            .hollo{
-                font-size: 0.8em;
-                //background-color: pink;
-                height: fit-content;
-                display: flex;
-                align-items: center;
-                margin-top: 10px;
-            }
+          .hollo {
+            font-size: 0.8em;
+            //background-color: pink;
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+          }
         }
       }
 
@@ -292,71 +290,70 @@ section {
         align-items: center;
         gap: 8em;
 
-        .doubleC{
-            margin-left: 2em;
-            max-width: min-content;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5em;
-            h2{
-                margin-right: 10px;
-            }
-            span{
-                font-size: 0.9em;
-            }
+        .doubleC {
+          margin-left: 2em;
+          max-width: min-content;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5em;
+          h2 {
+            margin-right: 10px;
+          }
+          span {
+            font-size: 0.9em;
+          }
         }
-        .themstats{
-            ul{
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                gap: 3em;
-                margin-top: 1em;
-                li{
-                    text-align: center;
-                    align-items: center;
+        .themstats {
+          ul {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 3em;
+            margin-top: 1em;
+            li {
+              text-align: center;
+              align-items: center;
 
+              .card {
+                padding: 1.5em 1.5em;
+                width: fit-content;
+                background: white;
+                border-radius: 18px;
+                position: relative;
 
-                    .card{
-                      padding: 1.5em 1.5em;
-                      width: fit-content;
-                      background: white;
-                      border-radius: 18px;
-                      position: relative;
-
-                      img{
-                        border-radius: 50%;
-                        width: 40px;
-                        position: absolute;
-                        top: -25;
-                        left: 35%;
-                      }
-
-                      h4{
-                        font-size: 0.8em;
-                      }
-                      .hollow{
-                        margin-bottom: 10px;
-                      }
-  
-                      span{
-                        margin: 5px 0;
-                          font-size: 0.6em;
-                          display: block;
-                      }
-
-                      .tiny{
-                        font-size: 0.4em;
-                      }
-                    }
+                img {
+                  border-radius: 50%;
+                  width: 40px;
+                  position: absolute;
+                  top: -25;
+                  left: 35%;
                 }
+
+                h4 {
+                  font-size: 0.8em;
+                }
+                .hollow {
+                  margin-bottom: 10px;
+                }
+
+                span {
+                  margin: 5px 0;
+                  font-size: 0.6em;
+                  display: block;
+                }
+
+                .tiny {
+                  font-size: 0.4em;
+                }
+              }
             }
+          }
         }
       }
     }
   }
 }
 
-.hollow{
-    color: #9e9e9e;
+.hollow {
+  color: #9e9e9e;
 }
