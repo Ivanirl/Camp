@@ -23,12 +23,13 @@
   text-decoration: none;
   list-style: none;
   color: #181818;
-  //box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   height: 100%;
-  //max-width: fill;
+  width: 100%;
+  margin-bottom: 4em;
 }
 
 .mainBody {
@@ -40,7 +41,7 @@ body {
 
 section {
   padding: 1.7em 2em;
-  font-size: 1.1em;
+  font-size: 1.1em; 
 }
 
 .navigation {
@@ -48,6 +49,8 @@ section {
   border-right: solid 2px #9e9e9e;
   padding-left: 0;
   padding-right: 0;
+  z-index: 1001;
+  
 
   .container {
     text-align: left;
@@ -93,11 +96,11 @@ section {
         font-size: 1em;
       font-weight: 500;
       margin-top: 2em;
-      padding-left: 2.6em;
-      margin-bottom: 4.3em;
+      padding-left: 2.5em;
+      margin-bottom: 3.8em;
       ul {
         li {
-          margin: 0.8em 0;
+          margin: 1em 0;
           // padding-right: 0 3em;
         }
       }
@@ -105,7 +108,7 @@ section {
 
     .bottomNav {
       font-weight: 500;
-      padding-left: 2.6em;
+      padding-left: 2.5em;
 
       ul {
         li {
@@ -117,6 +120,7 @@ section {
 }
 
 .dashboard {
+  padding-bottom: 42em;
     h2{
         font-size: 1.5em;
     }
@@ -124,6 +128,7 @@ section {
     span{
         font-size: 1em;
     }
+
 
   .container {
     padding: 0 1em;
@@ -143,7 +148,6 @@ section {
         margin-top: 3em;
         display: flex;
         gap: 5em;
-        //justify-content: space-between;
 
         .block {
             .hm{
@@ -162,9 +166,9 @@ section {
       }
 
       .extraDataBlock {
-        gap: 2em;
+        gap: 3em;
         display: flex;
-        margin-top: 2.5em;
+        margin-top: 2.1em;
 
         .retention {
           width: fit-content;
@@ -193,10 +197,12 @@ section {
           }
 
           .megan {
+            align-items: center;
             margin-top: 10px;
             padding: 1em 2em;
+            padding-right: 0;
             display: flex;
-            width: 24em;
+            width: fit-content;
             background-color: aqua;
             border-radius: 18px;
             gap: 0;
@@ -204,6 +210,17 @@ section {
 
             .left {
               opacity: 0.7;
+            }
+
+            .right{
+              margin: 10px 0;
+              margin-left: 6em;
+              margin-right: 4em;
+              width: fit-content;
+
+              img{
+                height: 7.5em;
+              }
             }
 
             span {
@@ -217,33 +234,44 @@ section {
                 display: flex;
                 flex-direction: column;
                 margin: 10px 0;
-                gap: 10px;
+                gap: 13px;
 
                 li{
                     font-size: 0.8em;
                     display: flex;
-                    gap: 1.5em;
+                    gap: 1.9em;
+                    align-items: center;
+                    flex-wrap: nowrap;
+
+                    .picpic{
+                      border-radius: 50%;
+                      width: 50px;
+                    }
                 }
             }
 
             .hollo{
                 font-size: 0.8em;
                 //background-color: pink;
+                height: fit-content;
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
             }
         }
       }
 
       .socialStatsBlock {
         display: flex;
-        margin-top: 2em;
+        margin-top: 2.7em;
         background: rgb(141, 206, 226);
         border-radius: 18px;
         padding: 2em 2em;
         align-items: center;
-        gap: 5em;
+        gap: 8em;
 
         .doubleC{
-            margin-left: 1em;
+            margin-left: 2em;
             max-width: min-content;
             display: flex;
             flex-direction: column;
@@ -258,24 +286,46 @@ section {
         .themstats{
             ul{
                 display: flex;
-                gap: 1.5em;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 3em;
+                margin-top: 1em;
                 li{
-                    background: white;
-                    border-radius: 18px;
                     text-align: center;
-                    padding: 1em 1em;
-                    h4{
-                      font-size: 0.8em;
-                    }
+                    align-items: center;
 
-                    span{
-                      margin: 5px 0;
-                        font-size: 0.6em;
-                        display: block;
-                    }
 
-                    .tiny{
-                      font-size: 0.4em;
+                    .card{
+                      padding: 1.5em 1.5em;
+                      width: fit-content;
+                      background: white;
+                      border-radius: 18px;
+                      position: relative;
+
+                      img{
+                        border-radius: 50%;
+                        width: 40px;
+                        position: absolute;
+                        top: -25;
+                        left: 35%;
+                      }
+
+                      h4{
+                        font-size: 0.8em;
+                      }
+                      .hollow{
+                        margin-bottom: 10px;
+                      }
+  
+                      span{
+                        margin: 5px 0;
+                          font-size: 0.6em;
+                          display: block;
+                      }
+
+                      .tiny{
+                        font-size: 0.4em;
+                      }
                     }
                 }
             }
