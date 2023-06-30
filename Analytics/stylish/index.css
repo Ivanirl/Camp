@@ -22,10 +22,13 @@
   text-decoration: none;
   list-style: none;
   color: #181818;
+  box-sizing: border-box;
 }
 
 body {
   height: 100%;
+  width: 100%;
+  margin-bottom: 4em;
 }
 
 .mainBody {
@@ -44,6 +47,7 @@ section {
   border-right: solid 2px #9e9e9e;
   padding-left: 0;
   padding-right: 0;
+  z-index: 1001;
 }
 .navigation .container {
   text-align: left;
@@ -82,20 +86,23 @@ section {
   font-size: 1em;
   font-weight: 500;
   margin-top: 2em;
-  padding-left: 2.6em;
-  margin-bottom: 4.3em;
+  padding-left: 2.5em;
+  margin-bottom: 3.8em;
 }
 .navigation .container .middleNav ul li {
-  margin: 0.8em 0;
+  margin: 1em 0;
 }
 .navigation .container .bottomNav {
   font-weight: 500;
-  padding-left: 2.6em;
+  padding-left: 2.5em;
 }
 .navigation .container .bottomNav ul li {
   margin: 0.8em 0;
 }
 
+.dashboard {
+  padding-bottom: 42em;
+}
 .dashboard h2 {
   font-size: 1.5em;
 }
@@ -132,9 +139,9 @@ section {
   gap: 10px;
 }
 .dashboard .container .contain .extraDataBlock {
-  gap: 2em;
+  gap: 3em;
   display: flex;
-  margin-top: 2.5em;
+  margin-top: 2.1em;
 }
 .dashboard .container .contain .extraDataBlock .retention {
   width: -moz-fit-content;
@@ -162,16 +169,29 @@ section {
   border: solid 2px #9e9e9e;
 }
 .dashboard .container .contain .extraDataBlock .retention .megan {
+  align-items: center;
   margin-top: 10px;
   padding: 1em 2em;
+  padding-right: 0;
   display: flex;
-  width: 24em;
+  width: -moz-fit-content;
+  width: fit-content;
   background-color: aqua;
   border-radius: 18px;
   gap: 0;
 }
 .dashboard .container .contain .extraDataBlock .retention .megan .left {
   opacity: 0.7;
+}
+.dashboard .container .contain .extraDataBlock .retention .megan .right {
+  margin: 10px 0;
+  margin-left: 6em;
+  margin-right: 4em;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.dashboard .container .contain .extraDataBlock .retention .megan .right img {
+  height: 7.5em;
 }
 .dashboard .container .contain .extraDataBlock .retention .megan span {
   font-size: 0.8em;
@@ -180,27 +200,38 @@ section {
   display: flex;
   flex-direction: column;
   margin: 10px 0;
-  gap: 10px;
+  gap: 13px;
 }
 .dashboard .container .contain .extraDataBlock .Competitors .competi li {
   font-size: 0.8em;
   display: flex;
-  gap: 1.5em;
+  gap: 1.9em;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.dashboard .container .contain .extraDataBlock .Competitors .competi li .picpic {
+  border-radius: 50%;
+  width: 50px;
 }
 .dashboard .container .contain .extraDataBlock .Competitors .hollo {
   font-size: 0.8em;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 .dashboard .container .contain .socialStatsBlock {
   display: flex;
-  margin-top: 2em;
+  margin-top: 2.7em;
   background: rgb(141, 206, 226);
   border-radius: 18px;
   padding: 2em 2em;
   align-items: center;
-  gap: 5em;
+  gap: 8em;
 }
 .dashboard .container .contain .socialStatsBlock .doubleC {
-  margin-left: 1em;
+  margin-left: 2em;
   max-width: -moz-min-content;
   max-width: min-content;
   display: flex;
@@ -215,23 +246,42 @@ section {
 }
 .dashboard .container .contain .socialStatsBlock .themstats ul {
   display: flex;
-  gap: 1.5em;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3em;
+  margin-top: 1em;
 }
 .dashboard .container .contain .socialStatsBlock .themstats ul li {
+  text-align: center;
+  align-items: center;
+}
+.dashboard .container .contain .socialStatsBlock .themstats ul li .card {
+  padding: 1.5em 1.5em;
+  width: -moz-fit-content;
+  width: fit-content;
   background: white;
   border-radius: 18px;
-  text-align: center;
-  padding: 1em 1em;
+  position: relative;
 }
-.dashboard .container .contain .socialStatsBlock .themstats ul li h4 {
+.dashboard .container .contain .socialStatsBlock .themstats ul li .card img {
+  border-radius: 50%;
+  width: 40px;
+  position: absolute;
+  top: -25;
+  left: 35%;
+}
+.dashboard .container .contain .socialStatsBlock .themstats ul li .card h4 {
   font-size: 0.8em;
 }
-.dashboard .container .contain .socialStatsBlock .themstats ul li span {
+.dashboard .container .contain .socialStatsBlock .themstats ul li .card .hollow {
+  margin-bottom: 10px;
+}
+.dashboard .container .contain .socialStatsBlock .themstats ul li .card span {
   margin: 5px 0;
   font-size: 0.6em;
   display: block;
 }
-.dashboard .container .contain .socialStatsBlock .themstats ul li .tiny {
+.dashboard .container .contain .socialStatsBlock .themstats ul li .card .tiny {
   font-size: 0.4em;
 }
 
