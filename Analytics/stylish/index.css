@@ -223,9 +223,16 @@ section {
   text-align: center;
   padding: 1em 1em;
 }
-.dashboard .container .contain .socialStatsBlock .themstats ul li span {
+.dashboard .container .contain .socialStatsBlock .themstats ul li h4 {
   font-size: 0.8em;
+}
+.dashboard .container .contain .socialStatsBlock .themstats ul li span {
+  margin: 5px 0;
+  font-size: 0.6em;
   display: block;
+}
+.dashboard .container .contain .socialStatsBlock .themstats ul li .tiny {
+  font-size: 0.4em;
 }
 
 .hollow {
