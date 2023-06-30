@@ -31,6 +31,11 @@ body {
   margin-bottom: 4em;
 }
 
+.ivanhead {
+  width: 30px;
+  border-radius: 50%;
+}
+
 .mainBody {
   display: flex;
   height: 100%;
@@ -86,18 +91,31 @@ section {
   font-size: 1em;
   font-weight: 500;
   margin-top: 2em;
-  padding-left: 2.5em;
+  padding-left: 2.2em;
   margin-bottom: 3.8em;
 }
 .navigation .container .middleNav ul li {
+  align-items: center;
   margin: 1em 0;
+}
+.navigation .container .middleNav ul li span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
 }
 .navigation .container .bottomNav {
   font-weight: 500;
-  padding-left: 2.5em;
+  padding-left: 2.2em;
 }
 .navigation .container .bottomNav ul li {
   margin: 0.8em 0;
+  align-items: center;
+  margin: 1em 0;
+}
+.navigation .container .bottomNav ul li span {
+  display: flex;
+  align-items: center;
+  gap: 9px;
 }
 
 .dashboard {
@@ -176,7 +194,7 @@ section {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: aqua;
+  background-color: rgba(66, 236, 222, 0.4);
   border-radius: 18px;
   gap: 0;
 }
@@ -192,6 +210,7 @@ section {
 }
 .dashboard .container .contain .extraDataBlock .retention .megan .right img {
   height: 7.5em;
+  border-radius: 2em;
 }
 .dashboard .container .contain .extraDataBlock .retention .megan span {
   font-size: 0.8em;
@@ -224,7 +243,7 @@ section {
 .dashboard .container .contain .socialStatsBlock {
   display: flex;
   margin-top: 2.7em;
-  background: rgb(141, 206, 226);
+  background: rgba(141, 226, 141, 0.7);
   border-radius: 18px;
   padding: 2em 2em;
   align-items: center;
