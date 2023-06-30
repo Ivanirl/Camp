@@ -31,6 +31,10 @@ body {
   width: 100%;
   margin-bottom: 4em;
 }
+.ivanhead{
+  width: 30px;
+  border-radius: 50%;
+}
 
 .mainBody {
   display: flex;
@@ -96,23 +100,38 @@ section {
         font-size: 1em;
       font-weight: 500;
       margin-top: 2em;
-      padding-left: 2.5em;
+      padding-left: 2.2em;
       margin-bottom: 3.8em;
       ul {
         li {
+          align-items: center;
           margin: 1em 0;
           // padding-right: 0 3em;
+
+          span{
+            display: flex;
+            align-items: center;
+            gap: 9px;
+          }
         }
       }
     }
 
     .bottomNav {
       font-weight: 500;
-      padding-left: 2.5em;
+      padding-left: 2.2em;
 
       ul {
         li {
           margin: 0.8em 0;
+          align-items: center;
+          margin: 1em 0;
+
+          span{
+            display: flex;
+            align-items: center;
+            gap: 9px;
+          }
         }
       }
     }
@@ -203,7 +222,7 @@ section {
             padding-right: 0;
             display: flex;
             width: fit-content;
-            background-color: aqua;
+            background-color: rgba($color: #42ecde, $alpha: 0.4);
             border-radius: 18px;
             gap: 0;
             //box-shadow: ;
@@ -220,6 +239,7 @@ section {
 
               img{
                 height: 7.5em;
+                border-radius: 2em;
               }
             }
 
@@ -264,7 +284,7 @@ section {
       .socialStatsBlock {
         display: flex;
         margin-top: 2.7em;
-        background: rgb(141, 206, 226);
+        background: rgba($color: rgb(141, 226, 141), $alpha: 0.7);
         border-radius: 18px;
         padding: 2em 2em;
         align-items: center;
