@@ -29,6 +29,7 @@ body {
   height: 100%;
   width: 100%;
   margin-bottom: 4em;
+  background: rgba(66, 236, 222, 0.08);
 }
 
 .ivanhead {
@@ -143,6 +144,9 @@ section {
   margin-top: 3em;
   display: flex;
   gap: 5em;
+}
+.dashboard .container .contain .statBlock .block {
+  width: 7.5em;
 }
 .dashboard .container .contain .statBlock .block .hm {
   font-size: 1.3em;
