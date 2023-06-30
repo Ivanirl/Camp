@@ -35,7 +35,7 @@ body {
 }
 
 section {
-  padding: 2.5em 2em;
+  padding: 1.7em 2em;
   font-size: 1.1em;
 }
 
@@ -51,7 +51,7 @@ section {
 .navigation .container .topNav,
 .navigation .container .logo {
   text-align: center;
-  padding: 0.5em 5.5em;
+  padding: 0.5em 4.5em;
 }
 .navigation .container .topNav {
   margin: 2em 0;
@@ -79,10 +79,11 @@ section {
   font-size: 0.9em;
 }
 .navigation .container .middleNav {
+  font-size: 1em;
   font-weight: 500;
-  margin-top: 3em;
+  margin-top: 2em;
   padding-left: 2.6em;
-  margin-bottom: 4em;
+  margin-bottom: 4.3em;
 }
 .navigation .container .middleNav ul li {
   margin: 0.8em 0;
@@ -95,6 +96,12 @@ section {
   margin: 0.8em 0;
 }
 
+.dashboard h2 {
+  font-size: 1.5em;
+}
+.dashboard span {
+  font-size: 1em;
+}
 .dashboard .container {
   padding: 0 1em;
 }
@@ -111,24 +118,30 @@ section {
   margin-top: 3em;
   display: flex;
   gap: 5em;
-  justify-content: space-between;
+}
+.dashboard .container .contain .statBlock .block .hm {
+  font-size: 1.3em;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .dashboard .container .contain .statBlock .block .ho {
   display: flex;
   justify-content: space-between;
-  border-bottom: solid 2px;
+  border-bottom: solid 1.2px #9e9e9e;
+  padding-bottom: 5px;
   gap: 10px;
 }
 .dashboard .container .contain .extraDataBlock {
+  gap: 2em;
   display: flex;
-  margin-top: 3em;
-  justify-content: space-between;
+  margin-top: 2.5em;
 }
 .dashboard .container .contain .extraDataBlock .retention {
   width: -moz-fit-content;
   width: fit-content;
 }
 .dashboard .container .contain .extraDataBlock .retention .head {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -136,15 +149,15 @@ section {
 }
 .dashboard .container .contain .extraDataBlock .retention .head span {
   margin-top: 3px;
-  font-size: 0.9em;
+  font-size: 0.8em;
   color: #9e9e9e;
   align-self: center;
 }
 .dashboard .container .contain .extraDataBlock .retention .head .timeperiod {
   align-self: center;
   padding: 1px 4px;
-  border-radius: 20%;
-  font-size: 0.9em;
+  border-radius: 14%;
+  font-size: 0.8em;
   color: #9e9e9e;
   border: solid 2px #9e9e9e;
 }
@@ -152,16 +165,69 @@ section {
   margin-top: 10px;
   padding: 1em 2em;
   display: flex;
+  width: 24em;
   background-color: aqua;
-  border-radius: 20px;
+  border-radius: 18px;
   gap: 0;
 }
 .dashboard .container .contain .extraDataBlock .retention .megan .left {
   opacity: 0.7;
 }
 .dashboard .container .contain .extraDataBlock .retention .megan span {
-  font-size: 0.9em;
+  font-size: 0.8em;
+}
+.dashboard .container .contain .extraDataBlock .Competitors .competi {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  gap: 10px;
+}
+.dashboard .container .contain .extraDataBlock .Competitors .competi li {
+  font-size: 0.8em;
+  display: flex;
+  gap: 1.5em;
+}
+.dashboard .container .contain .extraDataBlock .Competitors .hollo {
+  font-size: 0.8em;
 }
 .dashboard .container .contain .socialStatsBlock {
   display: flex;
+  margin-top: 2em;
+  background: rgb(141, 206, 226);
+  border-radius: 18px;
+  padding: 2em 2em;
+  align-items: center;
+  gap: 5em;
+}
+.dashboard .container .contain .socialStatsBlock .doubleC {
+  margin-left: 1em;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.dashboard .container .contain .socialStatsBlock .doubleC h2 {
+  margin-right: 10px;
+}
+.dashboard .container .contain .socialStatsBlock .doubleC span {
+  font-size: 0.9em;
+}
+.dashboard .container .contain .socialStatsBlock .themstats ul {
+  display: flex;
+  gap: 1.5em;
+}
+.dashboard .container .contain .socialStatsBlock .themstats ul li {
+  background: white;
+  border-radius: 18px;
+  text-align: center;
+  padding: 1em 1em;
+}
+.dashboard .container .contain .socialStatsBlock .themstats ul li span {
+  font-size: 0.8em;
+  display: block;
+}
+
+.hollow {
+  color: #9e9e9e;
 }/*# sourceMappingURL=index.css.map */
