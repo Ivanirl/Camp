@@ -49,15 +49,23 @@ section {
   font-size: 1.1em;
 }
 
+.arrow{
+  width: 20px;
+  height: 20px;
+}
+
 .navigation {
   height: 100%;
   border-right: solid 2px #9e9e9e;
   padding-left: 0;
   padding-right: 0;
   z-index: 1001;
+  position: fixed;
+  background-color: #F0FDFC;
 
   .container {
     text-align: left;
+    
 
     .topNav,
     .logo {
@@ -65,17 +73,28 @@ section {
       padding: 0.5em 4.5em;
     }
 
+    .logo{
+      img{
+        margin-top: 8px;
+        width: 6em;
+      }
+    }
+
     .topNav {
-      margin: 2em 0;
-      margin-top: 1.5;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 2em 0.7em;
+      margin-top: 0;
 
       .profilepic {
+        width: fit-content;
         margin-bottom: 1em;
         padding: 3px;
         background-color: rgb(120, 211, 223);
         border-radius: 50%;
         .ivanface {
-          width: 7em;
+          width: 5em;
           border-radius: 50%;
         }
       }
@@ -97,15 +116,15 @@ section {
     }
 
     .middleNav {
-      font-size: 1em;
+      font-size: 0.9em;
       font-weight: 500;
-      margin-top: 2em;
+      margin-top: 3em;
       padding-left: 2.2em;
-      margin-bottom: 3.8em;
+      margin-bottom: 3em;
       ul {
         li {
           align-items: center;
-          margin: 1em 0;
+          margin: 0.8em 0;
           // padding-right: 0 3em;
 
           span {
@@ -118,19 +137,24 @@ section {
     }
 
     .bottomNav {
+      margin-top: 4em;
       font-weight: 500;
-      padding-left: 2.2em;
+      padding-left: 2.8em;
+      font-size: 0.9em;
 
       ul {
         li {
-          margin: 0.8em 0;
+          margin: 0.6em 0;
           align-items: center;
-          margin: 1em 0;
+          //margin: 1em 0;
 
           span {
             display: flex;
             align-items: center;
-            gap: 9px;
+            gap: 11px;
+            img{
+              width: 18px;
+            }
           }
         }
       }
@@ -139,6 +163,7 @@ section {
 }
 
 .dashboard {
+  margin-left: 17em;
   padding-bottom: 42em;
   h2 {
     font-size: 1.5em;
@@ -172,13 +197,14 @@ section {
           .hm {
             font-size: 1.3em;
             height: fit-content;
+            padding-top: 2px;
           }
 
           .ho {
             display: flex;
             justify-content: space-between;
             border-bottom: solid 1.2px #9e9e9e;
-            padding-bottom: 5px;
+            padding-bottom: 2px;
             gap: 10px;
           }
         }
@@ -199,30 +225,46 @@ section {
             gap: 2em;
 
             span {
+              display: flex;
+              align-items: center;
               margin-top: 3px;
               font-size: 0.8em;
               color: #9e9e9e;
               align-self: center;
+              gap: 5px;
+
+              img{
+                width: 8px;
+              }
             }
 
             .timeperiod {
+              display: flex;
+              align-items: center;
+              gap: 9px;
               align-self: center;
-              padding: 1px 4px;
-              border-radius: 14%;
+              padding: 2px 9px;
+              border-radius: 12px;
               font-size: 0.8em;
-              color: #9e9e9e;
-              border: solid 2px #9e9e9e;
+              color: #666666;
+              border: solid 2px #666666;
+
+              img{
+                transform: rotate(90deg);
+              }
             }
           }
 
           .megan {
             align-items: center;
             margin-top: 10px;
-            padding: 1em 2em;
-            padding-right: 0;
+            padding: 0;
+            padding-left: 2em;
             display: flex;
-            width: fit-content;
-            background-color: rgba($color: #42ecde, $alpha: 0.4);
+            width: 100%;
+            //height: 100%;
+            background-color: rgba($color: #42207C, $alpha: 0.3);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
             border-radius: 18px;
             gap: 0;
             //box-shadow: ;
@@ -233,12 +275,12 @@ section {
 
             .right {
               margin: 10px 0;
-              margin-left: 6em;
-              margin-right: 4em;
+              margin-left: 3em;
+              margin-right: 3em;
               width: fit-content;
 
               img {
-                height: 7.5em;
+                height: 9.5em;
                 border-radius: 2em;
               }
             }
@@ -277,6 +319,8 @@ section {
             display: flex;
             align-items: center;
             margin-top: 10px;
+            display: flex;
+            gap: 8px;
           }
         }
       }
@@ -284,7 +328,8 @@ section {
       .socialStatsBlock {
         display: flex;
         margin-top: 2.7em;
-        background: rgba($color: rgb(141, 226, 141), $alpha: 0.7);
+        background: rgba($color: #3B88D1, $alpha: 0.3);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         border-radius: 18px;
         padding: 2em 2em;
         align-items: center;
@@ -320,17 +365,21 @@ section {
                 background: white;
                 border-radius: 18px;
                 position: relative;
+                box-shadow: 0px 9.550561904907227px 43.932586669921875px 5.730337142944336px rgba(0, 0, 0, 0.29);
+
 
                 img {
                   border-radius: 50%;
                   width: 40px;
                   position: absolute;
-                  top: -25;
+                  top: -20;
                   left: 35%;
+                  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
                 }
 
                 h4 {
-                  font-size: 0.8em;
+                  font-size: 0.9em;
                 }
                 .hollow {
                   margin-bottom: 10px;
@@ -338,12 +387,12 @@ section {
 
                 span {
                   margin: 5px 0;
-                  font-size: 0.6em;
+                  font-size: 0.7em;
                   display: block;
                 }
 
                 .tiny {
-                  font-size: 0.4em;
+                  font-size: 0.5em;
                 }
               }
             }

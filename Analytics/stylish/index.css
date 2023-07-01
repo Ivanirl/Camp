@@ -48,12 +48,19 @@ section {
   font-size: 1.1em;
 }
 
+.arrow {
+  width: 20px;
+  height: 20px;
+}
+
 .navigation {
   height: 100%;
   border-right: solid 2px #9e9e9e;
   padding-left: 0;
   padding-right: 0;
   z-index: 1001;
+  position: fixed;
+  background-color: #F0FDFC;
 }
 .navigation .container {
   text-align: left;
@@ -63,18 +70,27 @@ section {
   text-align: center;
   padding: 0.5em 4.5em;
 }
+.navigation .container .logo img {
+  margin-top: 8px;
+  width: 6em;
+}
 .navigation .container .topNav {
-  margin: 2em 0;
-  margin-top: 1.5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2em 0.7em;
+  margin-top: 0;
 }
 .navigation .container .topNav .profilepic {
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 1em;
   padding: 3px;
   background-color: rgb(120, 211, 223);
   border-radius: 50%;
 }
 .navigation .container .topNav .profilepic .ivanface {
-  width: 7em;
+  width: 5em;
   border-radius: 50%;
 }
 .navigation .container .topNav .profileDetails span {
@@ -89,15 +105,15 @@ section {
   font-size: 0.9em;
 }
 .navigation .container .middleNav {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 500;
-  margin-top: 2em;
+  margin-top: 3em;
   padding-left: 2.2em;
-  margin-bottom: 3.8em;
+  margin-bottom: 3em;
 }
 .navigation .container .middleNav ul li {
   align-items: center;
-  margin: 1em 0;
+  margin: 0.8em 0;
 }
 .navigation .container .middleNav ul li span {
   display: flex;
@@ -105,21 +121,26 @@ section {
   gap: 9px;
 }
 .navigation .container .bottomNav {
+  margin-top: 4em;
   font-weight: 500;
-  padding-left: 2.2em;
+  padding-left: 2.8em;
+  font-size: 0.9em;
 }
 .navigation .container .bottomNav ul li {
-  margin: 0.8em 0;
+  margin: 0.6em 0;
   align-items: center;
-  margin: 1em 0;
 }
 .navigation .container .bottomNav ul li span {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 11px;
+}
+.navigation .container .bottomNav ul li span img {
+  width: 18px;
 }
 
 .dashboard {
+  margin-left: 17em;
   padding-bottom: 42em;
 }
 .dashboard h2 {
@@ -152,12 +173,13 @@ section {
   font-size: 1.3em;
   height: -moz-fit-content;
   height: fit-content;
+  padding-top: 2px;
 }
 .dashboard .container .contain .statBlock .block .ho {
   display: flex;
   justify-content: space-between;
   border-bottom: solid 1.2px #9e9e9e;
-  padding-bottom: 5px;
+  padding-bottom: 2px;
   gap: 10px;
 }
 .dashboard .container .contain .extraDataBlock {
@@ -177,28 +199,40 @@ section {
   gap: 2em;
 }
 .dashboard .container .contain .extraDataBlock .retention .head span {
+  display: flex;
+  align-items: center;
   margin-top: 3px;
   font-size: 0.8em;
   color: #9e9e9e;
   align-self: center;
+  gap: 5px;
+}
+.dashboard .container .contain .extraDataBlock .retention .head span img {
+  width: 8px;
 }
 .dashboard .container .contain .extraDataBlock .retention .head .timeperiod {
+  display: flex;
+  align-items: center;
+  gap: 9px;
   align-self: center;
-  padding: 1px 4px;
-  border-radius: 14%;
+  padding: 2px 9px;
+  border-radius: 12px;
   font-size: 0.8em;
-  color: #9e9e9e;
-  border: solid 2px #9e9e9e;
+  color: #666666;
+  border: solid 2px #666666;
+}
+.dashboard .container .contain .extraDataBlock .retention .head .timeperiod img {
+  transform: rotate(90deg);
 }
 .dashboard .container .contain .extraDataBlock .retention .megan {
   align-items: center;
   margin-top: 10px;
-  padding: 1em 2em;
-  padding-right: 0;
+  padding: 0;
+  padding-left: 2em;
   display: flex;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: rgba(66, 236, 222, 0.4);
+  width: 100%;
+  background-color: rgba(66, 32, 124, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 18px;
   gap: 0;
 }
@@ -207,13 +241,13 @@ section {
 }
 .dashboard .container .contain .extraDataBlock .retention .megan .right {
   margin: 10px 0;
-  margin-left: 6em;
-  margin-right: 4em;
+  margin-left: 3em;
+  margin-right: 3em;
   width: -moz-fit-content;
   width: fit-content;
 }
 .dashboard .container .contain .extraDataBlock .retention .megan .right img {
-  height: 7.5em;
+  height: 9.5em;
   border-radius: 2em;
 }
 .dashboard .container .contain .extraDataBlock .retention .megan span {
@@ -243,11 +277,14 @@ section {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  display: flex;
+  gap: 8px;
 }
 .dashboard .container .contain .socialStatsBlock {
   display: flex;
   margin-top: 2.7em;
-  background: rgba(141, 226, 141, 0.7);
+  background: rgba(59, 136, 209, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-radius: 18px;
   padding: 2em 2em;
   align-items: center;
@@ -285,27 +322,29 @@ section {
   background: white;
   border-radius: 18px;
   position: relative;
+  box-shadow: 0px 9.5505619049px 43.9325866699px 5.7303371429px rgba(0, 0, 0, 0.29);
 }
 .dashboard .container .contain .socialStatsBlock .themstats ul li .card img {
   border-radius: 50%;
   width: 40px;
   position: absolute;
-  top: -25;
+  top: -20;
   left: 35%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .dashboard .container .contain .socialStatsBlock .themstats ul li .card h4 {
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 .dashboard .container .contain .socialStatsBlock .themstats ul li .card .hollow {
   margin-bottom: 10px;
 }
 .dashboard .container .contain .socialStatsBlock .themstats ul li .card span {
   margin: 5px 0;
-  font-size: 0.6em;
+  font-size: 0.7em;
   display: block;
 }
 .dashboard .container .contain .socialStatsBlock .themstats ul li .card .tiny {
-  font-size: 0.4em;
+  font-size: 0.5em;
 }
 
 .hollow {
